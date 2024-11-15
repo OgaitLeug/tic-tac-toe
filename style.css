@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+img.espaco_jogo {
+  width: 150px;
+  height: 150px;
+  border: 1px solid gray;
+  margin: 2px;
+  background-color: #25292e;
+}
+
+#win {
+  font-size: 3rem;
+  font-weight: bolder;
+  font-family: "Permanent Marker", cursive;
+  animation: blinker 1s linear infinite;
+}
+.wino {
+  color: #ffd754;
+}
+.winx {
+  color: #ba412c;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#view_vez {
+  margin-left: 10px;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  img.espaco_jogo {
+    width: 90px;
+    height: 90px;
+  }
+  #win {
+    font-size: 2rem;
+  }
+  .frase {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  img.espaco_jogo {
+    width: 70px;
+    height: 70px;
+  }
+}

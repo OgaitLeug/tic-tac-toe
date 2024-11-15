@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TMGAMES Tic Tac Toe</title>
+    <link
+      rel="shortcut icon"
+      href="imagens/favicon-32x32.png"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!--    __________________________________________________________________________________________________________-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!--    __________________________________________________________________________________________________________-->
+
+    <!-- font family:
+    Permanent Marker Regular 400  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <!--    __________________________________________________________________________________________________________ #9e2521red-->
+  </head>
+
+  <body style="background-color: #212529">
+    <section>
+      <h1
+        style="color: white; font-family: 'Permanent Marker', cursive"
+        class="text-center m-1 display-3"
+      >
+        - Tic Tac Toe -
+      </h1>
+      <h2 style="color: white" class="text-center m-1 frase">
+        Vez de jogar :
+        <strong
+          id="view_vez"
+          style="
+            font-family: 'Permanent Marker', Arial, sans-serif;
+            color: #9e2521;
+          "
+          >X</strong
+        >
+      </h2>
+      <h3 class="text-center m-2" id="win"></h3>
+      <container>
+        <div class="d-flex justify-content-center">
+          <img class="espaco_jogo" id="img0" />
+          <img class="espaco_jogo" id="img1" />
+          <img class="espaco_jogo" id="img2" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img class="espaco_jogo" id="img3" />
+          <img class="espaco_jogo" id="img4" />
+          <img class="espaco_jogo" id="img5" />
+        </div>
+        <div class="d-flex justify-content-center">
+          <img class="espaco_jogo" id="img6" />
+          <img class="espaco_jogo" id="img7" />
+          <img class="espaco_jogo" id="img8" />
+        </div>
+      </container>
+
+      <div class="d-flex justify-content-center mt-2">
+        <a href=""
+          ><img src="imagens/outline_restart_alt_white_48dp.png" alt="Reset"
+        /></a>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
